@@ -1,0 +1,665 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* video bg*/
+.sectionVideo {
+    position: relative;
+    /* colocamos altura de 100vh para que se ajuste siempre a la altura  del dispositivo en el que nos encontremos */
+    height: 100vh;
+    /* quitamos el scroll en eje X AND Y */
+    overflow: hidden;
+}
+
+.sectionVideo video {
+    /* posicion "absolute" para poder posicionar el video dentro del contenedor con respecto a su posición padre */
+    position: absolute;
+    /* posiciona el video en el centro vertical del contenedor */
+    top: 50%;
+    /* posiciona el video en el centro horizontal del contenedor */
+    left: 50%;
+    /* establece el ancho mínimo del video en el 100% del ancho del contenedor */
+    min-width: 100%;
+    /* establece la altura mínima del video en el 100% del alto del contenedor */
+    min-height: 100%;
+    /* desplaza el video hacia arriba y la izquierda en un 50% de su ancho y alto, 
+    para centrarlo completamente en el contenedor. */
+    transform: translateX(-50%) translateY(-50%);
+    /* le agregamos una opacidad al video  */
+    filter: brightness(0.3);
+}
+.sectionVideo .boxContent {
+    /* elementos internos puedan ser posicionados de forma absoluta sobre el vídeo */
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.sectionVideo .boxContent h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.sectionVideo .boxContent p {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.sectionVideo .boxContent a {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 16px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    color: #fff;
+    /* permite que la transicion sea lenta y no brusca a la hora de pasar el cursor sobre el boton
+     y que se aplique el fondo al boton */
+    transition: 0.8s ease-in-out;
+}
+.sectionVideo .boxContent a:hover {
+    color: #000;
+    border: 0;
+    background-color: #ffd433;
+}
+.sectionVideo .boxContent a:hover .icon {
+    color: #000;
+    /* cuando pasamos el cursor sobre el boton, que rote el icono de la flecha hacia abajo */
+    transform: rotate(90deg);
+}
+.sectionVideo .boxContent .icon {
+    color: #fff;
+    /* permite que la transicion sea lenta y no brusca a la hora de pasar el cursor sobre el boton
+    >para que al pasar el cursor, la flecha cambio suavemente de rotacion */
+    transition: 0.8s ease-in-out;
+    margin: 0 0 0 5px;
+}
+nav {
+    background-color: #ffd433;
+}
+.nav-item a {
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    transition: all 0.7s ease-in;
+}
+.nav-item a:hover {
+    background-color: #fff;
+    border-radius: 5px;
+}
+.navigation-wrap .nav-item {
+    padding: 10px 0;
+}
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler i {
+    color: #000;
+    font-size: 27px;
+}
+.navbar-nav {
+    text-align: center;
+}
+.dropdown-menu {
+    background-color: #fff;
+    border: none;
+}
+
+/* estilos carousel  */
+.sectionCarousel {
+    /* Colocamos un alto de 100vh que hara que se ajuste al 100% del alto de la pantalla
+     del dispositivo que accedamos */
+    height: 100vh;
+}
+
+/* Hace que el contenedor del carousel ocupe todo el espacio disponible en la pantalla,
+independientemente del tamaño de la pantalla o del contenido del carousel,
+lo que permite una mejor experiencia de usuario y un diseño responsivo.  */
+.sectionCarousel .carousel,
+.sectionCarousel .carousel-inner,
+.sectionCarousel .carousel-item,
+.sectionCarousel .carousel-item::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+/* con la pseudo clase nth:nth-child() accedemos  a cada div con la clase .carousel-item */
+.sectionCarousel .carousel-item:nth-child(1) {
+    background-image: url("../img/carousel1.jpg");
+}
+.sectionCarousel .carousel-item:nth-child(2) {
+    background-image: url("../img/carousel2.jpg");
+}
+.sectionCarousel .carousel-item:nth-child(3) {
+    background-image: url("../img/carousel3.jpg");
+}
+
+.sectionCarousel .carousel-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    align-items: end;
+}
+
+.sectionCarousel .container {
+    text-align: center;
+    background: #fff;
+    padding: 30px 0;
+    margin-bottom: 50px;
+    border-top: 4px solid #ffd433;
+}
+
+.sectionCarousel h2 {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+}
+.sectionCarousel .line {
+    border: 2px solid #ffd433;
+    width: 10%;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.sectionCarousel p {
+    padding: 20px 0;
+    white-space: pre-line;
+    line-height: 27px;
+    color: #000;
+}
+
+/* Conforme se van pasando los slides que se oculten con la  opacidad */
+.sectionCarousel .carousel-inner .carousel-item {
+    opacity: 0;
+}
+/* Conforme se van pasando los slides cuando se llega al  que esta activo que aparezca */
+.sectionCarousel .carousel-inner .active {
+    opacity: 1;
+    transition: 0.3s;
+}
+/* le colocamos una opacidad de 1 para que el buton de "siguiente" y "anterior" no se vea con una transparencia  */
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1;
+}
+/* Le añadimos estilos al  boton anterior y siguiente  */
+.sectionCarousel .carousel-control-next-icon,
+.sectionCarousel .carousel-control-prev-icon {
+    font-size: 30px;
+    background: #ffd433;
+    border-radius: 50px;
+    transition: 0.3s;
+    color: #000;
+    width: 54px;
+    height: 54px;
+    /* Le indicamos que el contenido que tenga  por dentro con la  propiedad display:flex sea centrado totalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Le aplicamos hover al icono de anterior y siguiente y su respectivo fondo  */
+.sectionCarousel .carousel-control-next-icon:hover,
+.sectionCarousel .carousel-control-prev-icon:hover {
+    background: #f9d450;
+    color: #1c1c1c;
+}
+/* Le damos estilos a los indicadores de abajo  */
+.sectionCarousel .carousel-indicators button {
+    cursor: pointer;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+/* Cuando  el indicador del carousel  este activo, aplique los siguientes estilos  */
+.sectionCarousel .carousel-indicators button.active {
+    background: #f9d450;
+}
+/* estilos al boton  */
+.sectionCarousel .carousel-item a {
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 14px 32px;
+    border-radius: 4px;
+    color: #000;
+    background: #ffd433;
+}
+/* fin  */
+
+.seccion2 .tituloSeccion2 {
+    padding-top: 25px;
+    padding-bottom: 45px;
+    font-size: 45px;
+}
+
+.seccion2 .icon {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    background-color: #ffd433;
+    width: 110px;
+    padding: 25px;
+    color: #000;
+}
+
+/* efecto parallax  */
+
+.seccion3 {
+    background-image: url("../img/banner2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+
+.seccion3 h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 45px;
+    padding-top: 100px;
+}
+
+.seccion4 .tituloSeccion4 {
+    padding-top: 25px;
+    padding-bottom: 45px;
+    font-size: 45px;
+}
+
+.seccion4 .card {
+    border: none;
+}
+
+/* estilos al boton scrollTop  */
+
+.botonScrollTop {
+    /* hacemos que el boton scroll top se mantenga fijo mientras se hace scroll  */
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: #ffd433;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #000;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Tabs  */
+.sectionTabs h2 {
+    font-size: 45px;
+}
+.sectionTabs .nav-tabs {
+    border: 0;
+}
+.sectionTabs .nav-tabs .nav-link {
+    border: 2px solid #ffd433;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+.sectionTabs .nav-tabs .nav-link.active {
+    background-color: #ffd433;
+}
+.sectionTabs .nav-tabs .nav-link h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 35px;
+    color: #000;
+}
+.sectionTabs .tab-pane h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.sectionTabs .tab-pane .list-group-item {
+    background-color: #ffd433;
+    border: none;
+}
+
+/* seccion accordion */
+.sectionAccordion h2 {
+    font-size: 45px;
+}
+.sectionAccordion p {
+    font-size: 20px;
+}
+.sectionAccordion .accordion-button {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    background-color: #ffd433;
+}
+/* cuando se abre el accordion */
+.sectionAccordion .accordion-button:not(.collapsed) {
+    font-size: 20px;
+    color: #000;
+    background-color: #ffd433;
+    font-weight: 400;
+}
+.sectionAccordion .accordion-button:focus {
+    box-shadow: none;
+}
+/* se cambia el color de la flecha del accordion al colapsar, se coloca codigo hexadecimal para el  color y apartir del %23...*/
+.sectionAccordion .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+/* se cambia el color de la flecha del accordion sin colapsar, se coloca codigo hexadecimal para el  color y apartir del %23...*/
+.sectionAccordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.sectionAccordion .accordion-body img {
+    width: 580px;
+}
+.sectionAccordion .accordion-body video {
+    border-radius: 5px;
+}
+.sectionAccordion .accordion-body iframe {
+    border-radius: 5px;
+}
+.sectionAccordion .accordion-body input {
+    border-top: 2px solid #f9d450;
+    border-right: 0 solid #f9d450;
+    border-bottom: 2px solid #f9d450;
+    border-left: 2px solid #f9d450;
+}
+.sectionAccordion .accordion-body input:focus {
+    box-shadow: none;
+    border: 2px solid #f9d450;
+}
+.sectionAccordion .accordion-body .btnInput {
+    border: 0;
+    background-color: #f9d450;
+    color: #000;
+    padding: 0 20px;
+}
+/* pagina galeria con lightbox  */
+.sectionGallery h2 {
+    /* se baja el  titulo porque choca con el header que tiene un position-fixed  */
+    padding-top: 150px;
+    font-size: 45px;
+}
+
+/*Estilos */
+.sectionTestimonios h2{
+    font-size: 45px;
+}
+
+.sectionTestimonios .containerSlider{
+    padding-left: 50px;
+}
+
+.sectionTestimonios .sliderContent{
+    padding: 30px 30px 30px 60px;
+    margin: 0 15px 30px 0;
+    min-width: 350px;
+    box-shadow: 0px 2px 20px rgba(82, 86, 94, 0.1);
+    background: #fff;
+}
+
+.sectionTestimonios .sliderContent img{
+    width: 90px;
+    border-radius: 50%;
+    border: 6px solid #ffc107;
+    /*Posiciona de forma absoluta en relacion con el contenedor*/
+    position: absolute;
+    /*Para despues colocar la imagen a la izquierda con 1px*/
+    left: 1px;
+}
+
+.sectionTestimonios .sliderContent h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #000;
+}
+
+.sectionTestimonios .sliderContent .stars{
+    margin-top: 15px;
+}
+
+.sectionTestimonios .sliderContent .stars i{
+    color: #ffc107;
+    margin: 0 1px;
+}
+
+.sectionTestimonios .sliderContent .fa-quote-left,
+.sectionTestimonios .sliderContent .fa-quote-right{
+    color: #ffd565;
+    font-size: 26px;
+}
+
+.sectionTestimonios .sliderContent .fa-quote-left{
+    position: relative;
+    right: -5px;
+}
+
+.sectionTestimonios .sliderContent .fa-quote-right{
+    position: relative;
+    right: -5px;
+    top: 10px;
+}
+
+.sectionTestimonios .sliderContent p{
+    font-style: italic;
+    margin-top: 30px;
+}
+
+/* estilo al div que contiene los indicadores del slider  */
+
+.owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* estilos al indicador del slider */
+
+.owl-carousel button.owl-dot {
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    background-color: #999;
+    border-radius: 50%;
+}
+
+/* estilo al indicador del slider cuando esta activo */
+
+.owl-carousel .owl-dot.active {
+    background-color: #ffc107;
+}
+
+
+
+
+
+footer {
+    background-color: #ffd433;
+}
+
+footer p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .sectionVideo .boxContent {
+        padding-top: 50%;
+    }
+    .sectionVideo .boxContent h1 {
+        font-size: 23px;
+        line-height: 40px;
+    }
+    .sectionVideo .boxContent p {
+        font-size: 20px;
+    }
+    .sectionVideo .boxContent a {
+        padding: 15px 70px;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
+    .sectionCarousel .line {
+        width: 50%;
+    }
+    .sectionCarousel .container {
+        margin: 70px 15px;
+    }
+    .sectionCarousel p {
+        white-space: normal;
+    }
+    .sectionTabs .nav-tabs .nav-link {
+        border: 0;
+        margin: 0;
+    }
+    .sectionTabs .nav-tabs .nav-link h4 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+        /* slider */
+
+        .sectionTestimonios {
+
+            text-align: center;
+    
+        }
+    
+        .sectionTestimonios .containerSlider {
+    
+            padding-left: 0;
+    
+        }
+    
+        .sectionTestimonios .sliderContent img {
+    
+            position: initial;
+    
+            margin: auto;
+    
+        }
+}
+
+@media only screen and (max-width: 320px) and (max-height: 568px) {
+    .sectionVideo .boxContent {
+        padding-top: 30%;
+    }
+    .sectionVideo .boxContent a {
+        padding: 10px 50px;
+    }
+    .sectionCarousel .container {
+        margin: 80px 15px;
+    }
+    .sectionCarousel h2 {
+        font-size: 20px;
+    }
+    .sectionCarousel p {
+        display: none;
+    }
+    .sectionCarousel .line {
+        margin-bottom: 25px;
+    }
+    .sectionCarousel .carousel-item a {
+        padding: 8px 12px;
+    }
+    .sectionTabs .nav-tabs .nav-link {
+        border: 0;
+        margin: 0;
+    }
+    .sectionTabs .nav-tabs .nav-link h4 {
+        margin: 0;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .sectionVideo .boxContent {
+        padding-top: 60%;
+    }
+    .sectionVideo .boxContent h1 {
+        font-size: 30px;
+        line-height: 55px;
+    }
+    .sectionVideo .boxContent p {
+        font-size: 25px;
+    }
+    .sectionVideo .boxContent a {
+        padding: 15px 80px;
+    }
+    .sectionCarousel .container {
+        margin: 80px 15px;
+    }
+    .sectionCarousel p {
+        white-space: normal;
+    }
+    .sectionCarousel .line {
+        width: 30%;
+    }
+
+    .sectionTabs .nav-tabs .nav-link {
+        border: 0;
+        margin: 0;
+    }
+    .sectionTabs .nav-tabs .nav-link h4 {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sectionVideo .boxContent {
+        padding-top: 40%;
+    }
+    .sectionVideo .boxContent h1 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+    .sectionVideo .boxContent p {
+        font-size: 30px;
+    }
+    .sectionVideo .boxContent a {
+        padding: 15px 160px;
+    }
+
+    .sectionCarousel .line {
+        width: 40%;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .sectionAccordion .accordion-body img {
+        width: 495px;
+    }
+    .sectionTabs .tab-pane .imgBeneficios {
+        height: 390px;
+    }
+}

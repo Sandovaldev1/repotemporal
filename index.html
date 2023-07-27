@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Café 1820 | El mejor café de Costa Rica</title>
+</head>
+
+
+<body id="inicio">
+
+    <section class="sectionVideo">
+        <video src="vd/cafe.mp4" type="video/mp4" autoplay muted loop></video>
+        <div class="container boxContent">
+            <h1>Despierta tus sentidos con el sabor inconfundible de café 1820</h1>
+            <p>Descubre lo que tenemos para vos</p>
+            <a href="#nosotros">Comenzar <i class="fa-solid fa-chevron-right icon"></i></a>
+        </div>
+    </section>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Logo 1820" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#slogan">Slogan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="lightBoxVideo.html">Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <!-- Si ustedes quieren eliminar el dropdown, eliminan desde la 
+                            apertura de la etiqueta li hasta el cierre de la etiqueta li -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cafés
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#cafes">Clásico</a></li>
+                                <li><a class="dropdown-item" href="#">Especial</a></li>
+                                <li><a class="dropdown-item" href="#">Cielo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container sectionGallery py-5">
+        <h2 class="text-center pb-5">Galería</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 pb-3">
+                <a href="img/galeria1.jpg" data-fancybox="gallery" data-caption="Foto café caliente">
+                    <!-- w-100 = imagen siempre tenga un ancho del 100% y ancho de 100 para que esten alineadas y del mismo tamaño-->
+                    <img src="img/galeria1.jpg" alt="Foto cafe caliente" class="img-fluid rounded-4 w-100 h-100">
+                </a>
+            </div>
+
+            <div class="col-lg-5 col-md-12 pb-3">
+                <a href="img/galeria2.jpg" data-fancybox="gallery" data-caption="Foto sirviendo café">
+                    <img src="img/galeria2.jpg" alt="Foto sirviendo cafe" class="img-fluid rounded-4 w-100 h-100">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-12 pb-3">
+                <a href="img/galeria3.jpg" data-fancybox="gallery" data-caption="Foto sosteniendo una taza café">
+                    <img src="img/galeria3.jpg" alt="Foto sosteniendo una taza de cafe"
+                        class="img-fluid rounded-4 w-100 h-100">
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-12 pb-3">
+                <a href="img/galeria4.jpg" data-fancybox="gallery" data-caption="Foto de una taza de café">
+                    <img src="img/galeria4.jpg" alt="Foto de una taza de cafe" class="img-fluid rounded-4 w-100 h-100">
+                </a>
+            </div>
+
+            <div class="col-lg-8 col-md-12 pb-3">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 pb-3">
+                        <a href="img/galeria5.jpg" data-fancybox="gallery" data-caption="Foto sirviendo café">
+                            <img src="img/galeria5.jpg" alt="Foto sirviendo cafe"
+                                class="img-fluid rounded-4 w-100 h-100">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-8 col-md-12 pb-3">
+                        <a href="img/galeria6.jpg" data-fancybox="gallery" data-caption="Foto granos de café">
+                            <img src="img/galeria6.jpg" alt="Foto granos de cafe"
+                                class="img-fluid rounded-4 w-100 h-100">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-8 col-md-12 pb-3">
+                        <a href="img/galeria7.jpg" data-fancybox="gallery" data-caption="Foto café caliente">
+                            <img src="img/galeria7.jpg" alt="Foto cafe caliente"
+                                class="img-fluid rounded-4 w-100 h-100">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 pb-3">
+                        <a href="img/galeria8.jpg" data-fancybox="gallery" data-caption="Foto de una cafetería">
+                            <img src="img/galeria8.jpg" alt="Foto de una cafeteria"
+                                class="img-fluid rounded-4 w-100 h-100">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="nosotros" class="container-fluid seccion2 py-5">
+        <div class="container text-center">
+            <h2 class="tituloSeccion2">Nosotros</h2>
+            <div class="row">
+                <div class="col-md-4 pt-4 pb-3">
+                    <i class="fas fa-glasses fa-3x icon"></i>
+                    <h2 class="pt-4 pb-3">Visión</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, vitae sit! Aut accusamus itaque.
+                    </p>
+                </div>
+
+                <div class="col-md-4 pt-4 pb-3">
+                    <i class="fas fa-bullseye fa-3x icon"></i>
+                    <h2 class="pt-4 pb-3">Misión</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, vitae sit! Aut accusamus itaque.
+                    </p>
+                </div>
+
+                <div class="col-md-4 pt-4 pb-3">
+                    <i class="fas fa-male fa-3x icon"></i>
+                    <h2 class="pt-4 pb-3">Valores</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, vitae sit! Aut accusamus itaque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="slogan" class="container-fluid seccion3 py-5">
+        <div class="container text-center">
+            <h2>El mejor café de Costa Rica</h2>
+        </div>
+    </section>
+
+
+    <section id="cafes" class="container-fluid seccion4 py-5">
+        <div class="container text-center">
+            <h2 class="tituloSeccion4">Cafés</h2>
+            <div class="row">
+
+                <!-- carta 1 -->
+                <div class="col-md-4 pb-4">
+                    <div class="card">
+                        <img src="img/cafe1.png" class="card-img-top img-fluid" alt="Molido clasico">
+                        <div class="card-body">
+                            <h5 class="card-title">Molido clasico</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- carta 2 -->
+
+                <div class="col-md-4 pb-4">
+                    <div class="card">
+                        <img src="img/cafe2.png" class="card-img-top img-fluid" alt="Reserva especial">
+                        <div class="card-body">
+                            <h5 class="card-title">Reserva especial</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- carta 3  -->
+
+                <div class="col-md-4 pb-4">
+                    <div class="card">
+                        <img src="img/cafe3.png" class="card-img-top img-fluid" alt="Molido tueste claro">
+                        <div class="card-body">
+                            <h5 class="card-title">Molido tueste claro</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Se inicia una nueva fila porque ya la fila anterior cumplio con 12 columnas  -->
+
+            <div class="row">
+
+                <!-- carta 4  -->
+                <div class="col-md-4 pb-4">
+                    <div class="card">
+                        <img src="img/cafe4.png" class="card-img-top img-fluid" alt="Grano entero clásico">
+                        <div class="card-body">
+                            <h5 class="card-title">Grano entero clásico</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- carta 5  -->
+                <div class="col-md-4 pb-4">
+                    <div class="card">
+                        <img src="img/cafe5.png" class="card-img-top img-fluid" alt="Molido cielo">
+                        <div class="card-body">
+                            <h5 class="card-title">Molido cielo</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- carta 6  -->
+                <div class="col-md-4 pb-4">
+                    <div class="card">
+                        <img src="img/cafe6.jpg" class="card-img-top img-fluid" alt="Café negro">
+                        <div class="card-body">
+                            <h5 class="card-title">Café negro</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container py-5 sectionTabs">
+        <h2 class="text-center">Café 1820</h2>
+        <div class="row py-5">
+            <ul class="nav nav-tabs d-flex justify-content-center">
+                <li class="col-lg-3 pb-4">
+                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#historia">
+                        <h4>Historia</h4>
+                    </a>
+                </li>
+
+                <li class="col-lg-3 pb-4">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#beneficios">
+                        <h4>Beneficios</h4>
+                    </a>
+                </li>
+
+                <li class="col-lg-3 pb-4">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#encargados">
+                        <h4>Encargados</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content">
+            <!-- fade es una clase privada que permite mostrar el contenido de 
+                una forma suave y no rapida -->
+            <!-- active: es una clase privada  que permite  mostrarle al usuario que tab esta activo -->
+            <!-- show: es una clase privada que permite que se muestre el contenido del tab activo  -->
+            <div class="tab-pane fade active show" id="historia">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <!-- ratio ratio-16x9 es una clase privada que sirve solamente envolviendo el video de yt en un div
+                        haciendo que el video sea responsive -->
+                        <div class="ratio ratio-16x9">
+                            <!-- rounded-1 clase  privada que permite hacer un border-radius  -->
+                            <iframe class="rounded-1" width="560" height="315"
+                                src="https://www.youtube.com/embed/yzhDVsbRdBc"
+                                title="Vídeo historia cafe 1820"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 text-center pt-5">
+                        <h4>Historia</h4>
+                        <img src="img/line.svg" alt="raya" class="img-fluid">
+                        <p>El café 1820 es uno de los cafés más famosos de Costa Rica, y su historia se remonta a
+                            principios del siglo XIX. En ese momento, Costa Rica era una colonia española y la economía
+                            del país dependía principalmente de la exportación de productos agrícolas como el cacao, el
+                            tabaco y el añil.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="beneficios">
+                <div class="row text-center">
+                    <div class="col-lg-5 col-md-12">
+                        <img src="img/beneficios.jpg" alt="Foto de beneficios"
+                            class="img-fluid rounded-1 imgBeneficios">
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <h4 class="pt-4">Beficios del café</h4>
+                        <img src="img/line.svg" alt="raya" class="img-fluid">
+                        <ol class="list-group list-group-numbered pt-3">
+                            <li class="list-group-item">Alta concentración de antioxidantes</li>
+                            <li class="list-group-item">Estimula el cerebro</li>
+                            <li class="list-group-item">Mejora el rendimiento físico</li>
+                            <li class="list-group-item">Acelera la pérdida de peso</li>
+                            <li class="list-group-item">Reduce el dolor de cabeza</li>
+                            <li class="list-group-item">Reduce el riesgo de cáncer</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="encargados">
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-6 pb-4">
+                        <div class="card">
+                            <img src="img/fundador.jpg" class="card-img-top img-fluid"
+                                alt="Foto del fundador de café 1820">
+                            <div class="card-body">
+                                <h5 class="card-title py-3">Leonel Jiménez</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Obcaecati alias aperiam, consequatur officiis sed placeat natus
+                                    veniam cumque commodi labore fuga eaque. Excepturi provident, asperiores
+                                    quas minus enim quae ea!</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <!-- fs- = font-size:  -->
+                                <!-- fw-semibold : font-weight -->
+                                <li class="list-group-item fs-5 fw-semibold">Fundador</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 pb-4">
+                        <div class="card">
+                            <img src="img/gerente.jpg" class="card-img-top img-fluid" alt="Foto del gerente café 1820">
+                            <div class="card-body">
+                                <h5 class="card-title py-3">David Zuñiga</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Quis reiciendis ducimus quisquam officia quibusdam, eaque unde
+                                    corrupti aspernatur expedita quas reprehenderit eligendi odit neque
+                                    tempora eveniet rem quam at. Itaque.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item fs-5 fw-semibold">Gerente</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 pb-4">
+                        <div class="card">
+                            <img src="img/marketing.jpg" class="card-img-top img-fluid"
+                                alt="Foto de la encargada de marketing café 1820">
+                            <div class="card-body">
+                                <h5 class="card-title py-3">María Esquivel</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Quis reiciendis ducimus quisquam officia quibusdam, eaque unde
+                                    corrupti aspernatur expedita quas reprehenderit eligendi odit neque
+                                    tempora eveniet rem quam at. Itaque.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item fs-5 fw-semibold">Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container py-5 sectionAccordion">
+        <h2 class="text-center pb-3">Preguntas</h2>
+        <p class="pb-5 text-center">¿Tiene alguna pregunta sobre nuestros productos?</p>
+        <div class="accordion accordion-flush" id="accordionSection">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion-item pb-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordionOne" aria-expanded="false" aria-controls="accordionOne">
+                                ¿Donde nos ubicamos?
+                            </button>
+                        </h2>
+                        <div id="accordionOne" class="accordion-collapse collapse" data-bs-parent="#accordionSection">
+                            <div class="accordion-body">
+                                <p>Grupo Agroindustrial Numar, de la Iglesia Nuestra Señora de la Medalla Milagrosa, 75
+                                    mts al oeste, Av 26, San José</p>
+                                <div class="ratio ratio-16x9">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15720.444382575744!2d-84.0905216!3d9.9247049!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3457eca10b7%3A0xedb8de1d5fe308b7!2sGrupo%20Agroindustrial%20Numar%20S.A.!5e0!3m2!1ses-419!2scr!4v1683588439996!5m2!1ses-419!2scr"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item pb-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordionTwo" aria-expanded="false" aria-controls="accordionTwo">
+                                ¿Hacen envíos?
+                            </button>
+                        </h2>
+                        <div id="accordionTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSection">
+                            <div class="accordion-body">
+                                <p>Sí, realizamos envíos a cualquier parte del país</p>
+                                <img src="img/delivery.jpg" class="img-fluid rounded-3" alt="Foto envío productos">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item pb-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Donde me suscribo para recibir ofertas?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionSection">
+                            <div class="accordion-body">
+                                <p>Puede suscribirse en la sección de contacto o puede hacerlo directamente acá</p>
+                                <div class="input-group mb-3">
+                                    <!-- aria-describedby = se utiliza para proporcionar una descripción accesible del botón o elemento
+                                     de entrada asociado a un elemento de ayuda o información adicional.  -->
+                                    <input type="text" class="form-control" placeholder="Escriba su email"
+                                        aria-label="Escriba su email" aria-describedby="botonEnvioSuscripcion">
+                                    <button class="btnInput" type="button"
+                                        id="botonEnvioSuscripcion">Suscribirme</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="accordion-item pb-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordionFour" aria-expanded="false" aria-controls="accordionFour">
+                                ¿Como preparan el café?
+                            </button>
+                        </h2>
+                        <div id="accordionFour" class="accordion-collapse collapse" data-bs-parent="#accordionSection">
+                            <div class="accordion-body">
+                                <p>Los granos de café se seleccionan cuidadosamente y se
+                                    mezclan en proporciones específicas para obtener el sabor y aroma deseados</p>
+                                <div class="ratio ratio-16x9">
+                                    <video src="vd/cafe2.mp4" muted controls></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item pb-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordionFive" aria-expanded="false" aria-controls="accordionFive">
+                                ¿Que precio tiene el café?
+                            </button>
+                        </h2>
+                        <div id="accordionFive" class="accordion-collapse collapse" data-bs-parent="#accordionSection">
+                            <div class="accordion-body">
+                                <p>Depende de los tamaños, tenemos desde pequeños a grandes</p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="img/cafe7.png" alt="Café pequeño" class="img-fluid">
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <img src="img/cafe1.png" alt="Café grande" class="img-fluid">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item pb-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordionSix" aria-expanded="false" aria-controls="accordionSix">
+                                ¿Alguna receta con el café de ustedes?
+                            </button>
+                        </h2>
+                        <div id="accordionSix" class="accordion-collapse collapse" data-bs-parent="#accordionSection">
+                            <div class="accordion-body">
+                                <p>Hay muchas, dejamos por acá la más popular</p>
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S7zWuDfudhQ"
+                                        title="Video de cafe" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5 sectionTestimonios">
+        <h2 class="text-center pb-5">Testimonios</h2>
+        <div class="owl-carousel">
+            <div class="containerSlider">
+                <div class="sliderContent">
+                    <img src="img/testimonio1.jpg" class="testimonial-img img-fluid" alt="Testimonio uno">
+                    <h3>Javier Martínez</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-quote-left"></i>
+                        ¡El café es simplemente asombroso! Cada sorbo es una explosión de
+                        sabor y aroma. Nunca había probado un café tan delicioso. Definitivamente, se ha
+                        convertido en mi marca favorita de café para disfrutar de una taza de café perfecta en
+                        un día tan cansado.
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="containerSlider">
+                <div class="sliderContent">
+                    <img src="img/testimonio2.jpg" class="testimonial-img img-fluid" alt="Testimonio dos">
+                    <h3>Alejandro Lopez</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-quote-left"></i>
+                        Después de probar este café, no puedo volver a los cafés mediocres. La calidad de los
+                        granos utilizados es evidente en cada taza. Es tan sabroso que me hace sentir como si
+                        estuviera en una cafetería de alto nivel en cada sorbo. Si eres un amante del café,
+                        definitivamente debes probarlo.
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="containerSlider">
+                <div class="sliderContent">
+                    <img src="img/testimonio3.jpg" class="testimonial-img img-fluid" alt="Testimonio tres">
+                    <h3>Maria Gonzales</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-quote-left"></i>
+                        Como amante del café, puedo decir con total seguridad que este café es excepcional. Su
+                        sabor suave y equilibrado me cautivó desde el primer sorbo. Además, el personal es
+                        amable y conocedor, lo que hace que la experiencia sea aún más agradable. No puedo
+                        recomendarlo lo suficiente.
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="containerSlider">
+                <div class="sliderContent">
+                    <img src="img/testimonio4.jpg" class="testimonial-img img-fluid" alt="Testimonio cuatro">
+                    <h3>Sofía Ramírez</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        <i class="fa-solid fa-quote-left"></i>
+                        Soy bastante exigente con mi café, pero este lugar realmente me impresionó. El café está
+                        tostado a la perfección, lo que le brinda un sabor suave y rico. Además, tienen una
+                        amplia variedad de opciones, desde espresso hasta café con leche, para satisfacer todos
+                        los gustos. Sin duda, volveré una y otra vez.
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- boton scrollTop  -->
+    <a href="#inicio">
+        <div class="botonScrollTop">
+            <i class="fas fa-angle-up"></i>
+        </div>
+    </a>
+
+    <footer class="container-fluid py-3">
+        <div class="container text-center">
+            <p>Grupo AgroIndustrial NUMAR S.A. © 2023 Café 1820. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/00ce13a4f0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
